@@ -11,7 +11,7 @@ export function HowItWorksSection() {
           <p className="text-slate-600 text-lg sm:text-xl font-medium max-w-2xl mx-auto">You focus on scaling — we handle everything else.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
           {[
             { Icon: Phone, label: "Book a Free Consultation" },
             { Icon: Target, label: "We Analyze Your Business" },
