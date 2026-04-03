@@ -26,7 +26,7 @@ export function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <span className="text-lavender-600 font-black text-2xl tracking-tighter">OZ</span>
-          <span className="text-slate-900 font-bold text-xl tracking-tight hidden sm:block">Media Planet</span>
+          <span className="text-slate-900 font-bold text-xl tracking-tight">Media Planet</span>
         </div>
 
         {/* Desktop Navigation */}
