@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-lavender-50: #faf8fc;
+  --color-lavender-100: #f3f0f9;
+  --color-lavender-200: #e4deee;
+  --color-lavender-300: #d0c5e3;
+  --color-lavender-400: #b9b2d6;
+  --color-lavender-500: #9b81d6;
+  --color-lavender-600: #845ec2;
+  --color-lavender-700: #6a42a6;
+  --color-lavender-800: #4b2a82;
+  --color-lavender-900: #3d0d84;
+  --color-lavender-950: #29085c;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
@@ -16,6 +30,19 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -26,6 +53,65 @@ body {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
+.animate-fade-in-down {
+  animation: fadeInDown 0.4s ease-out forwards;
+}
+
+/* Your Specific Liquid Gradient Fill Hover Effect - Transparent Base */
+.btn-liquid {
+  background:
+    linear-gradient(var(--color-lavender-600) 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0%),
+    transparent;
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.btn-liquid:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff !important;
+  border-color: var(--color-lavender-600) !important;
+}
+
+/* White Base Variant */
+.btn-liquid-white {
+  background:
+    linear-gradient(var(--color-lavender-600) 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0%),
+    white;
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.btn-liquid-white:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff !important;
+  border-color: var(--color-lavender-600) !important;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.group,
+button,
+a,
+select,
+[role="button"] {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  cursor: text !important;
+}
+
+input[type="submit"],
+input[type="button"],
+button * {
+  cursor: pointer !important;
+}
+
+.pointer-events-none {
+  cursor: default !important;
 }
