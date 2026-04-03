@@ -57,8 +57,8 @@ export function ServicesSection() {
               style={{ animationDelay: `${idx * 0.15}s` }}
             >
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 bg-lavender-500/20 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <Icon size={28} className="text-lavender-400" />
+                <div className="w-14 h-14 bg-gradient-to-br from-lavender-500/30 to-lavender-600/10 border border-lavender-500/20 group-hover:border-lavender-400/50 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:shadow-md group-hover:shadow-lavender-500/20 transition-all duration-300">
+                  <Icon size={26} className="text-lavender-300" />
                 </div>
                 <div>
                   <h3 className="font-bold text-2xl text-white leading-tight mb-2">{title}</h3>

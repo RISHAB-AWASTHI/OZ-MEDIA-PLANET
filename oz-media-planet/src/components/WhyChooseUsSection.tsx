@@ -24,8 +24,8 @@ export function WhyChooseUsSection() {
               className="bg-white border border-slate-200 rounded-3xl p-6 flex items-center gap-5 shadow-sm hover:shadow-md hover:border-lavender-300 transition-all duration-300 group animate-fade-in-up"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
-              <div className="w-14 h-14 bg-lavender-50 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-300">
-                <Icon size={24} className="text-lavender-600" />
+              <div className="w-14 h-14 bg-gradient-to-br from-lavender-100 to-lavender-50 border border-lavender-200 group-hover:border-lavender-400 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:shadow-md group-hover:shadow-lavender-500/20 transition-all duration-300">
+                <Icon size={22} className="text-lavender-600" />
               </div>
               <p className="font-bold text-slate-800 text-lg leading-tight">{text}</p>
             </div>
